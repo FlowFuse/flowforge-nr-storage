@@ -1,0 +1,18 @@
+{
+  "name": "@flowforge/nr-storage",
+  "version": "1.0.0",
+  "description": "A HTTP REST Storage Plugin for Node-RED",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node-red",
+    "flowforge"
+  ],
+  "author": "ben@flowforge.com",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "got": "^11.8.2"
+  }
+}
