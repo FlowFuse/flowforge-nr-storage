@@ -97,8 +97,12 @@ module.exports  = {
                     searchParams: {
                         name: name
                     }
-                }).json()
-                resolve(entry)
+                })
+                if (entry.headers['content-type'].startsWith("application/json")) {
+                    resolve(JSON.parse(entry.body))
+                } else {
+                    resolve(entry.body)
+                }
             } catch (e) {
                 reject(e)
             }
