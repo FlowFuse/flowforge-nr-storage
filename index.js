@@ -15,8 +15,8 @@ module.exports  = {
 
         projectID = settings.projectID;
 
-        console.log(settings)
-        console.log(settings.baseURL + "/" + projectID + "/")
+        // console.log(settings)
+        // console.log(settings.baseURL + "/" + projectID + "/")
 
         this._client = got.extend({
             prefixUrl: settings.baseURL + "/" + projectID + "/",
