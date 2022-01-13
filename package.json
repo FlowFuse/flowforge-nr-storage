@@ -17,7 +17,7 @@
   "author": {
     "name": "FlowForge Inc."
   },
-  "license": "SEE LICENSE IN ./LICENSE",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/flowforge/flowforge-nr-storage/issues"
   },
