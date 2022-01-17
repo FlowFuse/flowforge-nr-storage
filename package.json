@@ -1,6 +1,6 @@
 {
   "name": "@flowforge/nr-storage",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A HTTP REST Storage Plugin for Node-RED",
   "main": "index.js",
   "scripts": {
