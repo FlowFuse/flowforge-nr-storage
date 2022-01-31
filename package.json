@@ -4,7 +4,9 @@
   "description": "A HTTP REST Storage Plugin for Node-RED",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint -c .eslintrc *.js",
+    "lint:fix": "eslint -c .eslintrc *.js --fix"
   },
   "keywords": [
     "node-red",
@@ -24,5 +26,9 @@
   "homepage": "https://github.com/flowforge/flowforge-nr-storage#readme",
   "dependencies": {
     "got": "^11.8.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3"
   }
 }
