@@ -1,3 +1,7 @@
+#### 0.3.0: Release
+
+ - Add GH action to publish to NPM on Release (#7) @hardillb
+
 #### 0.2.0: Release
 
  - Apply lint rules (#5) @hardillb
