@@ -1,3 +1,6 @@
+#### 0.4.0: Release
+
+
 #### 0.3.0: Release
 
  - Add GH action to publish to NPM on Release (#7) @hardillb
