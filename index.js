@@ -24,7 +24,7 @@ module.exports = {
                 authorization: 'Bearer ' + settings.token
             },
             timeout: {
-                request: 2000
+                request: 10000
             }
         })
 
