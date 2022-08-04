@@ -1,3 +1,7 @@
+#### 0.8.0: Release
+
+ - Bump timeout from 1 to 10 seconds (#18) @hardillb
+
 #### 0.7.0: Release
 
 
