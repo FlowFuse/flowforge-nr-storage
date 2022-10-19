@@ -49,7 +49,6 @@ module.exports = {
         })
     },
     getSettings: () => {
-
         return this._client.get('settings').json()
     },
     saveSettings: (settings) => {
@@ -70,7 +69,7 @@ module.exports = {
     getLibraryEntry: (type, name) => {
         return this._client.get('library/' + type, {
             searchParams: {
-                name: name
+                name
             }
         }).then(entry => {
             if (entry.headers['content-type'].startsWith('application/json')) {
@@ -83,9 +82,9 @@ module.exports = {
     saveLibraryEntry: (type, name, meta, body) => {
         return this._client.post('library/' + type, {
             json: {
-                name: name,
-                meta: meta,
-                body: body
+                name,
+                meta,
+                body
             },
             responseType: 'json'
         })
