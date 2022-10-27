@@ -1,3 +1,7 @@
+#### 1.0.0: Release
+
+ - Update eslint (#23) @knolleary
+
 #### 0.10.0: Release
 
 
