@@ -18,7 +18,6 @@ module.exports = function (RED) {
             if (!token) {
                 throw new Error('Missing required configuration property: token')
             }
-            console.log(config.baseURL + '/' + projectID + '/shared-library/' + libraryID + '/')
             this._client = got.extend({
                 prefixUrl: config.baseURL + '/' + projectID + '/shared-library/' + libraryID + '/',
                 headers: {
