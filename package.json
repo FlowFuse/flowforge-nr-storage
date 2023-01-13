@@ -30,5 +30,10 @@
     "devDependencies": {
         "eslint": "^8.25.0",
         "eslint-config-standard": "^17.0.0"
+    },
+    "node-red": {
+        "plugins": {
+            "teamLibrary": "library.js"
+        }
     }
 }
