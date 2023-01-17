@@ -19,7 +19,7 @@ module.exports = function (RED) {
                 throw new Error('Missing required configuration property: token')
             }
             this._client = got.extend({
-                prefixUrl: config.baseURL + '/' + projectID + '/shared-library/' + libraryID + '/',
+                prefixUrl: config.baseURL + '/library/' + libraryID + '/',
                 headers: {
                     'user-agent': 'FlowForge HTTP Storage v0.1',
                     authorization: 'Bearer ' + token
@@ -47,9 +47,9 @@ module.exports = function (RED) {
          *         if 'path' is not valid, it should throw a suitable error
          */
         async getEntry (type, name) {
-            return this._client.get(type, {
+            return this._client.get(name, {
                 searchParams: {
-                    name
+                    type
                 }
             }).then(entry => {
                 if (entry.headers['content-type'].startsWith('application/json')) {
@@ -68,9 +68,10 @@ module.exports = function (RED) {
          * @param {string} body The entry contents
          */
         async saveEntry (type, name, meta, body) {
-            return this._client.post(type, {
+            return this._client.post(name, {
                 json: {
                     name,
+                    type,
                     meta,
                     body
                 },
