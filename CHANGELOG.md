@@ -1,3 +1,8 @@
+#### 1.3.0: Release
+
+ - Update shared library api to match revised platform API (#28) @knolleary
+ - Add flowforge-team-library store plugin (#27) @knolleary
+
 #### 1.2.0: Release
 
 
