@@ -1,3 +1,11 @@
+**⚠️ This repository has been merged into https://github.com/flowforge/flowforge-nr-launcher**
+
+**⚠️ See https://github.com/flowforge/flowforge-nr-launcher/issues/99 for details**
+
+
+---
+
+
 # @flowforge/nr-storage
 
 A Node-RED Storage Plugin for the FlowForge platform.
